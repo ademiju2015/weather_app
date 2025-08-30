@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "252164220322",
+    "project_id": "mini-gpt-f5980",
+    "storage_bucket": "mini-gpt-f5980.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252164220322:android:6ad3bb685d55ddef317efb",
+        "android_client_info": {
+          "package_name": "com.example.gpt_mini"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJyOOIFbVNbjnMWI5b0-m870_EYIhpyFk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

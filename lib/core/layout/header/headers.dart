@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hugeicons/hugeicons.dart';
 import 'package:lucide_icons/lucide_icons.dart';
 import 'package:gpt_mini/core/utils/colors.dart';
 

@@ -5,12 +5,16 @@ import 'package:gpt_mini/core/services/gemini_services.dart';
 import 'package:gpt_mini/feature/ai_chat/providers/chat_state_notifier.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
+part 'message_service.g.dart';
+
 class MessageService {
   MessageService(this.ref);
   final Ref ref;
 
   Future<void> sendMessage(String message)
  async{
+  print('User message added: $message');
+
 
   final chatSession = await ref.read(chatSessionProvider.future);
   final chatStateNotifier =  ref.read(chatStateNotifierProvider.notifier);
@@ -24,6 +28,8 @@ class MessageService {
     final responseText = response.text;
 
     if(responseText != null){
+    debugPrint(responseText.toString());
+
       chatStateNotifier.appendMessage(responseText, llmMessage.id);
     }
   } catch (e) {

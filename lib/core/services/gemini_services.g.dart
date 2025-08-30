@@ -6,15 +6,16 @@ part of 'gemini_services.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$firebaseAppHash() => r'4b5a984cc6c99d953e26813626cba015f1eef45d';
+String _$firebaseAppHash() => r'eaf72348ad852e52538678ec3a1b50b5c9af17ef';
 
 /// See also [firebaseApp].
 @ProviderFor(firebaseApp)
 final firebaseAppProvider = AutoDisposeFutureProvider<FirebaseApp>.internal(
   firebaseApp,
   name: r'firebaseAppProvider',
-  debugGetCreateSourceHash:
-      const bool.fromEnvironment('dart.vm.product') ? null : _$firebaseAppHash,
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$firebaseAppHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
@@ -22,15 +23,16 @@ final firebaseAppProvider = AutoDisposeFutureProvider<FirebaseApp>.internal(
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
 typedef FirebaseAppRef = AutoDisposeFutureProviderRef<FirebaseApp>;
-String _$geminiModelHash() => r'c6550e4a62e99f22324928fae16928b7db5dce4a';
+String _$geminiModelHash() => r'9fdcdd1f109572e8e882a6c88a8dfc0c0c1d0a83';
 
 /// See also [geminiModel].
 @ProviderFor(geminiModel)
 final geminiModelProvider = AutoDisposeFutureProvider<GenerativeModel>.internal(
   geminiModel,
   name: r'geminiModelProvider',
-  debugGetCreateSourceHash:
-      const bool.fromEnvironment('dart.vm.product') ? null : _$geminiModelHash,
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$geminiModelHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
@@ -45,8 +47,9 @@ String _$chatSessionHash() => r'fdd5e4ed9d06db9712c9300eeb8a1b54a115b10a';
 final chatSessionProvider = FutureProvider<ChatSession>.internal(
   chatSession,
   name: r'chatSessionProvider',
-  debugGetCreateSourceHash:
-      const bool.fromEnvironment('dart.vm.product') ? null : _$chatSessionHash,
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$chatSessionHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );

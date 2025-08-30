@@ -2,12 +2,13 @@ import 'package:firebase_ai/firebase_ai.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:gpt_mini/firebase_options.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'gemini_services.g.dart';
 
 @riverpod
-Future<FirebaseApp> firebaseApp(Ref ref)=> Firebase.initializeApp();
+Future<FirebaseApp> firebaseApp(Ref ref)=> Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
 @riverpod
 Future<GenerativeModel> geminiModel(Ref ref) async{
